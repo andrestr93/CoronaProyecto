@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CoronaApp</string>
+    <string name="labnombreuser">Nombre Usuario</string>
+    <string name="labpass">Contraseña</string>
+    <string name="butaceptar">Aceptar</string>
+    <string name="butregistro">¿Todavia no estas registrado?</string>
+    <string name="nombrereg">Nombre Usuario</string>
+    <string name="passreg">Contraseña</string>
+    <string name="poblacionreg">Poblacion</string>
+    <string name="codreg">Codigo Postal</string>
+    <string name="tituloreg">Registro</string>
+    <string name="paisreg">Pais</string>
+    <string name="fechreg">Fecha de Nacimiento</string>
+    <string name="titulofor">Formulario Sintomas</string>
+    <string name="tosfor">¿Tienes tos?</string>
+    <string name="forfiebre">¿Te has hecho el test?</string>
+    <string name="forespirar">¿Tienes dificultad para respirar?</string>
+    <string name="forpaises">¿Has viajado a paises de riesgo?</string>
+    <string name="butreg">Aceptar</string>
+    <string name="butpres">Loguearse/registrarse</string>
+    <string name="titulopanuser">Perfil Usuario</string>
+    <string name="datosusu">Datos Personales</string>
+    <string name="infectadousu">Infectado</string>
+    <string name="buthuella">Escanear Huella</string>
+    <string name="butnoticias">Ultimas noticias</string>
+    <string name="tirecycler">USUARIOS INFECTADOS</string>
+
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris5">
+    tools:context=".Actividades.ActividadRegistro">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="@string/tituloreg"
+        android:textAlignment="center"
+        android:textColor="@color/colorblanco"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/nombrereg"
+        android:textColorHint="@color/colorblanco"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editpoblacion"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/colorblanco"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/poblacionreg"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpass" />
+
+    <EditText
+        android:id="@+id/editcodigo"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorblanco"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/codreg"
+        android:inputType="number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpoblacion" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/redondo"
+        android:onClick="botonReg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/butreg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <EditText
+        android:id="@+id/editfecha"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:textColorHint="@color/colorblanco"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/fechreg"
+        android:inputType="date"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpoblacion" />
+
+    <EditText
+        android:id="@+id/editpais"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/colorblanco"
+        android:ems="10"
+        android:hint="@string/paisreg"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+    app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editfecha" />
+
+    <Switch
+        android:id="@+id/stfiebre"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="@string/forfiebre"
+        android:textColor="@color/colorblanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpais" />
+
+    <Switch
+        android:id="@+id/strespirar"
+        android:gravity="center_horizontal"
+        android:layout_width="172dp"
+        android:textColor="@color/colorblanco"
+
+        android:layout_height="58dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/forespirar"
+        app:layout_constraintStart_toEndOf="@+id/stfiebre"
+        app:layout_constraintTop_toBottomOf="@+id/editpais" />
+
+    <Switch
+        android:id="@+id/stpaises"
+        android:gravity="center_horizontal"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:textColor="@color/colorblanco"
+        android:layout_marginTop="16dp"
+        android:text="@string/forpaises"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strespirar" />
+
+    <View
+        android:id="@+id/divider2"
+        android:outlineAmbientShadowColor="@color/colorblanco"
+        android:layout_width="409dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stpaises" />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="match_parent"
+        android:hint="@string/passreg"
+        android:textColorHint="@color/colorblanco"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editnombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

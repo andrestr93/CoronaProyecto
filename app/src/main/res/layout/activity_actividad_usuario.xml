@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris5"
+    tools:context=".Actividades.ActividadUsuario">
+
+    <TextView
+        android:id="@+id/viewtitulouser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="@string/titulopanuser"
+        android:textColor="@color/colorblanco"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/viewdata"
+        android:layout_width="149dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/datosusu"
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewtitulouser" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:fab_addButtonColorNormal="@color/azulgris4"
+        app:fab_addButtonColorPressed="@color/colorgris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fablista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            app:fabSize="normal"
+            app:fab_colorNormal="@color/gris4"
+            app:fab_colorPressed="@color/colorblanco"
+            app:fab_icon="@drawable/checkl" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            app:fab_colorNormal="@color/gris4"
+            app:fab_colorPressed="@color/colorblanco"
+            app:fab_icon="@drawable/borrar" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <TextView
+        android:id="@+id/viewnombreuser"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76dp"
+        android:textAlignment="center"
+
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewdata" />
+
+    <TextView
+        android:id="@+id/viewfechuser"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="76dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaisuser" />
+
+    <TextView
+        android:id="@+id/viewpaisuser"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewinfectadouser" />
+
+    <TextView
+        android:id="@+id/viewinfectadouser"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewnombreuser" />
+
+    <TextView
+        android:id="@+id/viewciudad"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/colorblanco"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewfechuser" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorblanco"
+        app:layout_constraintBottom_toTopOf="@+id/viewpaisuser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewinfectadouser"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/colorblanco"
+        app:layout_constraintBottom_toTopOf="@+id/viewfechuser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpaisuser" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorblanco"
+        app:layout_constraintBottom_toTopOf="@+id/viewnombreuser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewdata" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
